@@ -1,4 +1,4 @@
-// Prompts the user to enter a password
+// Prompt the user to enter a password
 let password = prompt("Enter your password:");
 
 password = password.trim()
