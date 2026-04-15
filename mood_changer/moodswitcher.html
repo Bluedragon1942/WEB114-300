@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="moods.css">
+    <script src="moods.js" defer></script>
+    <title>Adventure Character Creator</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+    <h1>Hi, I am just testing some JavaScript code here.</h1>
+
+        <section>
+
+            <h3> The exercises before used pop-up windows. This assignment doesn't need it to view the console.</h3>
+
+        </section>
+
+        <h2>Quesitons:</h2> 
+
+        <ol>
+
+            <h2>Why is textContent safer than innerHTML?</h2>
+
+            <li>
+                The reason why textContent is safer than innerHTML is because textContent treats everything as plain text and doesn't parse or execute the HTML or scripts.
+                This basically means that if a malious attacker were to have control and make the user input contain malicious code, it will be displayed harmlessly instead of running. 
+                But if you were to use innerHTML, it will interpret the content as HTML, which can allow attackers to inject and execute scripts if the input isn’t properly sanitized.
+                (As said in the video, suseptable to cross-attacks using JavaScript.)
+            </li>
+
+            <h2>
+                How are HTML elements connected to JavaScript variables using DOM selection?
+            </h2>
+
+            <li>
+                HTML elements are connected to the JavaScript variables through the DOM selection methods (like document.getElementById, querySelector, or getElementsByClassName) which locate elements 
+                within the page and return references to them. These references can/are stored in variables which allows JavaScript to read or modify the element’s content, attributes, or styles directly.
+            </li>
+
+            <h2>
+                What would happen to the text box with id="text" if I added this line to the code above it: <br> text.textContent = "Hello"
+            </h2>
+
+            <li>
+                It will modify that element with the id associated to the element to replace whatever text to Hello. Any text that was previously inside the element would be overwritten, and since textContent
+                is used, the text will be inserted as plain text without interpreting any HTML.
+            </li>
+
+        </ol>
+
+    </div>
+
+    <hr>
+
+    <center>
+
+        <h1 class="hline">
+            Choose a Mood
+        </h1>
+
+    </center>
+
+    <br>
+
+    <p>
+        Click a mood to change the theme!
+    </p>
+
+    <!--I do want to point out that this is malpractice to use multiple IDs in a single HTML, these are usually reserved for the HTML doc itself. Only one ID can be present at a time.-->
+    <button id="happyBtn" class="mood-btn">Happy</button>
+
+    <button id="calmBtn" class="mood-btn">Calm</button>
+
+    <button id="angryBtn" class="mood-btn">Angry</button>
+
+    <button id="sleepyBtn" class="mood-btn">Sleepy</button>
+
+    <button id="randomBtn" class="mood-btn tweak">Random <br>(EXPERIMENTAL)</button>
+
+    <br>
+
+    <button id="resetBtn" class="reset-btn">Reset</button>
+
+    <h2 id="moodDisplay"><b>No Mood Selected...</b></h2>
+
+</body>
+</html>
