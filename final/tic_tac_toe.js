@@ -14,7 +14,7 @@ let newGameBtn = document.querySelector('#new-btn');
 let msgContainer = document.querySelector('.msg-container');
 let msg = document.querySelector('#msg');
 
-alert(`\t\t\t   Welcome to Tic-Tac-Toe! \n\nTo play the game, Player O will go first. Click on the boxes to play the game. \n\nPress 'New Game' to start a new game or 'Reset' to reset the current game.`);
+alert(`\t\t\t   Welcome to Tic-Tac-Toe! \n\nTo play the game, Player O will go first. Click on the boxes to play the game. \n\nPress 'Reset' to reset the current game.`);
 
 // Asks for selected player names when page loads
 window.addEventListener("DOMContentLoaded", () => {
