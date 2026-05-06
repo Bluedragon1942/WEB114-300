@@ -1,0 +1,4 @@
+Bluedragon1942
+05/06/2026
+
+I chose this tic-tac-toe project because I thought it would be pretty simple to do. I always liked the game 2048 and it reminded me of this type of structure when it comes to the separate fields in the system. So far I think it turned out okay for what it is but good for the final. I decided (as you will see in the code) that I wanted to include some more thing that were not covered in the class. Was just curious and popped into my head when developing the project. Research is always key to project like these, it doesn't hurt to look up the thing you need or how to do it properly. Notes are also a good thing as well. So far I have learned a lot and was fun getting to know about the different variables and attributes. 
